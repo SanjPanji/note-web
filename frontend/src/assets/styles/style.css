@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;  
+ box-sizing: border-box; 
+ font-family: Manrope, sans-serif;
+}
+
+:root {
+    --toxic: #35F51C;
+    --grey: #D9D9D9;
+    --red: #F35764;
+    --blue: #1CB4F5;
+    --dark-grey: #313131;
+    --white: #FFFFFF;
+    --block-color: var(--white);
+
+    /* Light Theme */
+    --block-color: var(--grey);
+    --bg-color: var(--white);
+    --text-color: var(--dark-grey);
+}
+
+[data-theme="dark"] {
+    --bg-color: #1E1E1E;
+    --text-color: var(--white);
+    --block-color: var(--dark-grey);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.block {
+    margin: 15px;
+}
+
+/*Main page*/
+.up-menu {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Page-name {
+    font-size:30px;
+    font-weight: 300;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.search {
+    background-color: var(--block-color);
+    color: var(--text-color);
+}
+
+/*items*/
+.pinned-title {
+    font-weight: 250;
+    color: var(--text-color);
+}
+
+.items-list {
+    background-color: var(--block-color);
+}
+
+.item {
+    background-color: var(--block-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.item-title, .item-date {
+    color: var(--text-color);
+}
+
+.form-control {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.description {
+    color: var(--text-color);
+}
+
+
+
+.block {
+    margin: 15px ;
+}
+
+/*Main page*/
+.up-menu {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+.Page-name {
+    font-size:30px;
+    font-weight: 300;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+}
+.search {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 22px;
+    border: none;
+    outline: none;
+}
+.search-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
+.search-img {
+    width: 25px;
+    height: 25px;
+}
+
+.search-btn:active {
+    transform: scale(0.90);
+}
+.Search-field {
+    margin-bottom: 27px;
+}
+
+/*items*/
+.pinned-list {
+    background-color: var(--block-color);
+    border-radius: 8px;
+    padding: 5px 0 10px 0;
+    margin-bottom: 30px;
+}
+
+.pinned {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.pinned-title {
+    font-weight: 250;   
+}
+.pinned-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.pinned-btn:active {
+    transform: scale(0.90);
+}
+/*items-list*/
+.items-list {
+    background-color: var(--block-color);
+    border-radius: 8px;
+    padding: 5px 0 10px 0;
+    margin-bottom: 30px;
+}
+a {
+    display: block; /* Если нужно, чтобы элементы шли как <div>, а не inline */
+  }
+.item {
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+    padding: 5px 0px 0 10px;
+    height: 55px;
+}
+.item:hover {
+    background-color: var(--toxic);
+}
+.item-title {
+    color: var(--text-color);
+    font-size: 14px;
+}
+.item-date {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.fixed-bottom-right {
+    transition: 0.2s ease-in-out;
+    background-color: var(--toxic);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.fixed-bottom-right:active {
+    transform: scale(0.95);
+}
+
+/*make note page*/
+.back-btn {
+    background-color: var(--toxic);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.back-btn:active {
+    transform: scale(0.90);
+}
+.form {
+    margin-top: 20px;
+}
+.form-control {
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 70vh;
+    resize: none;
+    font-size: 14px;
+}
+.form-control:focus {
+    outline: none;
+}
+.submit-btn {
+    height: 40px;
+    width: 90vw;
+    background-color: var(--toxic);
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 300;
+}
+.submit-btn:active {
+    transform: scale(0.99);
+}
+
+/*delete page*/
+.submit-btn-delete {
+    height: 40px;
+    width: 90vw;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 25px;
+}
+.description {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 300px;
+    word-wrap: break-word;
+  white-space: normal;
+}
+
+/*read page*/
+
+.control-menu {
+    width: 92%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-edit, .menu-create, .menu-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.menu-edit {
+    background-color: var(--blue);
+}
+.menu-delete {
+    background-color: var(--red);
+}
+.menu-create {
+    background-color: var(--toxic);
+}
+
+/*pin-btn*/
+
+.pin-btn {
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    accent-color: var(--white);
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.pin-btn:checked {
+    accent-color: var(--toxic);
+}
+
+
+/*theme*/
+.theme-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.theme {
+    top:25px;
+    position: absolute;
+    right: 20px;
+}
+
+.hidden {
+    display: none !important;
+  }
+  
+  .visible {
+    display: block !important;
+  }
+  
+  
